@@ -18,5 +18,25 @@ int main()
     {
         cout << it->first << " pese " << it->second << " kg." << endl;
     }
+
+    map<string, double>::iterator trouve = poids.find("chien");
+
+
+    if(trouve == poids.end())
+
+    {
+
+        cout << "Le poids du chien n'est pas dans la table" << endl;
+
+    }
+
+    else
+
+    {
+
+        cout << "Le chien pese " << trouve->second << " kg." << endl;
+
+    }
+
     return 0;
 }
