@@ -4,5 +4,5 @@
 int Generer::operator()()
 {
 
-	return rand() % 10;
+	return (rand() % 10)*1.0;
 }
